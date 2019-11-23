@@ -13,7 +13,7 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_speakerListFragment2"
+            android:id="@+id/action_splashFragment_to_speakerListFragment"
             app:destination="@id/speakerListFragment" />
     </fragment>
 

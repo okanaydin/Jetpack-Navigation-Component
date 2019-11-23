@@ -29,11 +29,11 @@ class SpeakerListFragment : Fragment() {
         tvSpeakerTitle2.text = Speaker.getMertInfo().title
 
         cardViewOkan.setOnClickListener {
-            findNavController().navigate(R.id.action_speakerListFragment_to_speakerDetailFragment)
+            findNavController().navigate(SpeakerListFragmentDirections.actionSpeakerListFragmentToSpeakerDetailFragment())
         }
 
         cardViewMert.setOnClickListener {
-            findNavController().navigate(R.id.action_speakerListFragment_to_speakerDetailFragment)
+            findNavController().navigate(SpeakerListFragmentDirections.actionSpeakerListFragmentToSpeakerDetailFragment())
         }
     }
 }

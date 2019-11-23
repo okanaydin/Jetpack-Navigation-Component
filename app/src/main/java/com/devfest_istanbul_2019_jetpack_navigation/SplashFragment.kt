@@ -21,8 +21,7 @@ class SplashFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
         Handler().postDelayed({
-            findNavController().navigate(R.id.action_splashFragment_to_speakerListFragment2)
+            findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToSpeakerListFragment())
         }, 3000)
     }
-
 }
