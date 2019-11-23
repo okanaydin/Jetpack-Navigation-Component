@@ -16,7 +16,7 @@
         app:cardCornerRadius="4dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/card1"
+            android:id="@+id/cardViewOkan"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -70,6 +70,7 @@
         app:cardCornerRadius="4dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardViewMert"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

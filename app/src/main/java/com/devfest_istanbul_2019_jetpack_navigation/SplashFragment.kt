@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class SplashFragment : Fragment() {
 
@@ -20,7 +21,7 @@ class SplashFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
         Handler().postDelayed({
-            //TODO
+            findNavController().navigate(R.id.action_splashFragment_to_speakerListFragment2)
         }, 3000)
     }
 
