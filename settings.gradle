@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='DevFest-Istanbul-2019-Jetpack-Navigation'
