@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/splashFragment">
 
-
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.devfest_istanbul_2019_jetpack_navigation.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_splashFragment_to_speakerListFragment"
-            app:destination="@id/speakerListFragment" />
+            app:destination="@id/speakerListFragment"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
-
-
-
 
     <fragment
         android:id="@+id/speakerListFragment"
         android:name="com.devfest_istanbul_2019_jetpack_navigation.SpeakerListFragment"
         android:label="fragment_speaker_list"
-        tools:layout="@layout/fragment_speaker_list" >
+        tools:layout="@layout/fragment_speaker_list">
         <action
             android:id="@+id/action_speakerListFragment_to_speakerDetailFragment"
-            app:destination="@id/speakerDetailFragment" />
-
-
+            app:destination="@id/speakerDetailFragment">
+            <argument
+                android:name="speaker"
+                app:argType="com.devfest_istanbul_2019_jetpack_navigation.model.Speaker" />
+        </action>
 
 
     </fragment>
+
     <fragment
         android:id="@+id/speakerDetailFragment"
         android:name="com.devfest_istanbul_2019_jetpack_navigation.SpeakerDetailFragment"
         android:label="fragment_speaker_detail"
-        tools:layout="@layout/fragment_speaker_detail" />
+        tools:layout="@layout/fragment_speaker_detail">
+
+        <argument
+            android:name="speaker"
+            app:argType="com.devfest_istanbul_2019_jetpack_navigation.model.Speaker" />
+    </fragment>
 </navigation>

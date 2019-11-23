@@ -11,7 +11,11 @@ import kotlinx.android.synthetic.main.fragment_speaker_list.*
 
 class SpeakerListFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.fragment_speaker_list, container, false)
     }
 
@@ -29,11 +33,18 @@ class SpeakerListFragment : Fragment() {
         tvSpeakerTitle2.text = Speaker.getMertInfo().title
 
         cardViewOkan.setOnClickListener {
-            findNavController().navigate(SpeakerListFragmentDirections.actionSpeakerListFragmentToSpeakerDetailFragment())
+            findNavController().navigate(
+                SpeakerListFragmentDirections.actionSpeakerListFragmentToSpeakerDetailFragment(
+                    Speaker.getOkanInfo()
+                )
+            )
         }
-
         cardViewMert.setOnClickListener {
-            findNavController().navigate(SpeakerListFragmentDirections.actionSpeakerListFragmentToSpeakerDetailFragment())
+            findNavController().navigate(
+                SpeakerListFragmentDirections.actionSpeakerListFragmentToSpeakerDetailFragment(
+                    Speaker.getMertInfo()
+                )
+            )
         }
     }
 }

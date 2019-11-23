@@ -1,11 +1,14 @@
 package com.devfest_istanbul_2019_jetpack_navigation.model
 
+import android.os.Parcelable
 import com.devfest_istanbul_2019_jetpack_navigation.R
+import kotlinx.android.parcel.Parcelize
 
 /**
  *  Created by okan-aydin on 2019-11-23.
  */
 
+@Parcelize
 data class Speaker(
     val id: String,
     val image: Int,
@@ -14,7 +17,7 @@ data class Speaker(
     val session: String,
     val description: String,
     val location: String
-) {
+) : Parcelable {
     companion object {
         fun getOkanInfo(): Speaker = Speaker(
             "0",
