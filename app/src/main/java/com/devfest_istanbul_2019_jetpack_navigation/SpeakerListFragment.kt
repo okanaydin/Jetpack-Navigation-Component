@@ -13,14 +13,14 @@ class SpeakerListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         //Speaker 1
-        img_speaker_1.setImageResource(Speaker.getOkanInfo().image)
-        tv_speaker_name_1.text = Speaker.getOkanInfo().name
-        tv_speaker_title_1.text = Speaker.getOkanInfo().title
+        imgSpeaker1.setImageResource(Speaker.getOkanInfo().image)
+        tvSpeakerName1.text = Speaker.getOkanInfo().name
+        tvSpeakerTitle1.text = Speaker.getOkanInfo().title
 
         //Speaker 2
-        img_speaker_2.setImageResource(Speaker.getMertInfo().image)
-        tv_speaker_name_2.text = Speaker.getMertInfo().name
-        tv_speaker_title_2.text = Speaker.getMertInfo().title
+        imgSpeaker2.setImageResource(Speaker.getMertInfo().image)
+        tvSpeakerName2.text = Speaker.getMertInfo().name
+        tvSpeakerTitle2.text = Speaker.getMertInfo().title
 
         return inflater.inflate(R.layout.fragment_speaker_list, container, false)
     }

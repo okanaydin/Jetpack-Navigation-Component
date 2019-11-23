@@ -16,11 +16,12 @@
         app:cardCornerRadius="4dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/img_speaker_2"
+                android:id="@+id/imgSpeaker1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="8dp"
@@ -31,20 +32,20 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_speaker_name_2"
+                android:id="@+id/tvSpeakerName1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@id/tv_speaker_title_2"
-                app:layout_constraintStart_toEndOf="@id/img_speaker_2"
+                app:layout_constraintBottom_toTopOf="@id/tvSpeakerTitle1"
+                app:layout_constraintStart_toEndOf="@id/imgSpeaker1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
                 tools:text="Okan AYDIN" />
 
             <TextView
-                android:id="@+id/tv_speaker_title_2"
+                android:id="@+id/tvSpeakerTitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -52,8 +53,8 @@
                 android:gravity="center"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/img_speaker_2"
-                app:layout_constraintTop_toBottomOf="@id/tv_speaker_name_2"
+                app:layout_constraintStart_toEndOf="@id/imgSpeaker1"
+                app:layout_constraintTop_toBottomOf="@id/tvSpeakerName1"
                 tools:text="Jr.Android Developer @ citizenMe" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -73,7 +74,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/img_speaker_1"
+                android:id="@+id/imgSpeaker2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="8dp"
@@ -84,20 +85,20 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_speaker_name_1"
+                android:id="@+id/tvSpeakerName2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@id/tv_speaker_title_1"
-                app:layout_constraintStart_toEndOf="@id/img_speaker_1"
+                app:layout_constraintBottom_toTopOf="@id/tvSpeakerTitle2"
+                app:layout_constraintStart_toEndOf="@id/imgSpeaker2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
                 tools:text="Cafer Mert Ceyhan" />
 
             <TextView
-                android:id="@+id/tv_speaker_title_1"
+                android:id="@+id/tvSpeakerTitle2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -105,8 +106,8 @@
                 android:gravity="center"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/img_speaker_1"
-                app:layout_constraintTop_toBottomOf="@id/tv_speaker_name_1"
+                app:layout_constraintStart_toEndOf="@id/imgSpeaker2"
+                app:layout_constraintTop_toBottomOf="@id/tvSpeakerName2"
                 tools:text="Android Developer @ Dolap.com" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

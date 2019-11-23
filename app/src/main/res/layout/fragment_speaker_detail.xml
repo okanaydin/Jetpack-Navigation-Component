@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SpeakerDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/imgSpeakerDetail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/mert" />
+
+    <TextView
+        android:id="@+id/tvSpeakerNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvSpeakerLocationDetail"
+        app:layout_constraintStart_toEndOf="@id/imgSpeakerDetail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Cafer Mert Ceyhan" />
+
+    <TextView
+        android:id="@+id/tvSpeakerLocationDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/imgSpeakerDetail"
+        app:layout_constraintTop_toBottomOf="@id/tvSpeakerNameDetail"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSpeaker1"
+        tools:text="Istanbul" />
+
+
+    <TextView
+        android:id="@+id/tvSpeakerTitleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSpeakerDetail"
+        tools:text="Android Developer @ Dolap" />
+
+    <TextView
+        android:id="@+id/tvSpeakerBioDetail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpeakerTitleDetail"
+        tools:text="I'm Okan, an Android developer from Istanbul. I'm studying Computer Engineering at Isik University. I try to improve myself on Android development and try to learn as much as I can and also I have been a volunteer organizer of the GDG Istanbul community for three years. " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
